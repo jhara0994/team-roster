@@ -1,4 +1,4 @@
-const Employee = require('lib/Employee');
+const Employee = require('../lib/Employee');
 const { expect } = require('@jest/globals');
 const { test } = require('picomatch');
 const employee = new Employee ('Jared', 456179, 'jharalson29@gmail.com');
