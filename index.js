@@ -1,12 +1,68 @@
-// prompt for team member and their information
-// after prompts generate a team roster HTML that is formatted
+// variables
+const inquirer = require('inquirer')
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+const fs = require('fs')
+const path = require('path')
+const generateFile = require('./src/generateFile.js')
+const OUTPUT_DIR = path.resolve(__dirname, 'output')
+const outputPath = path.join(OUTPUT_DIR, 'team.html')
+const teamMembers = []
 
-// when i click on an email address, it opens my default email messenger and plugs in the TO field with the email
-
-// when i click on github username, github is opened in a new tab
-
-// upon application start, prompt to enter team manager’s name, employee ID, email address, and office number
-
-
-// need to use inquirer to collect data
-// need to run jest to to run unit test
+// inquirer prompt for team member and their information
+const managerPrompt = () => {
+    return inquirer.prompt ([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'Who is the team manager for this project?',
+            validate: managerName => {
+                if (managerName) {
+                    return true;
+                } else {
+                    console.log("Please enter the manager's name!")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: "What is the manager's id number?",
+            validate: managerId => {
+                if (managerId) {
+                    return true 
+                } else {
+                    console.log("Please enter the manager's ID!")
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the manager's email address?",
+            validate: email => {
+                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                if (valid) {
+                    return true;
+                } else {
+                    console.log('Please enter a valid email!')
+                    return false
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: "What office does the manager occupy?",
+            validate: officeNumber => {
+                if (officeNumber = Number) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+    ])
