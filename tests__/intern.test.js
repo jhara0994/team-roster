@@ -1,5 +1,3 @@
-const { expect } = require('@jest/globals')
-const { test } = require('picomatch')
 const Intern = require('../lib/Intern')
 const intern = new Intern('Tommy', 406789, 'tommyk@gmail.com', 'GSU')
 
@@ -8,7 +6,7 @@ test('can we get intern object', () => {
 })
 
 test('can we get intern school object', () => {
-    expect(intern.getSchool()).toEqual(expect.any(String))
+    expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()))
 })
 
 test('can we get intern role object', () => {

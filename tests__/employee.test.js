@@ -1,12 +1,10 @@
 const Employee = require('../lib/Employee');
-const { expect } = require('@jest/globals');
-const { test } = require('picomatch');
-const employee = new Employee ('Jared', 456179, 'jharalson29@gmail.com');
+const employee = new Employee ('Bob', 456179, 'bobt@gmail.com');
 
 test('can we get the object', () => {
-    expect(employee.name).toBe('Jared')
-    expect(employee.id).toBe(456179)
-    expect(employee.email).toBe('jharalson29@gmail.com')
+    expect(employee.name).toEqual(expect.any(String))
+    expect(employee.id).toEqual(expect.any(Number))
+    expect(employee.email).toEqual(expect.any(String))
 })
 
 test('can we get the employee name', () => {
@@ -18,5 +16,10 @@ test('can we get employee id', () => {
 })
 
 test ('can we get the employee email', () => {
-    expect(employee.getEmail()).toEqual(expect.any(String))
+    expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()))
+})
+
+test ('can we get employee role', () => {
+    expect(employee.getRole()).toEqual("Employee")
+
 })
