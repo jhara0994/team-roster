@@ -32,7 +32,7 @@ const managerPrompt = () => {
             name: 'id',
             message: "What is the manager's id number?",
             validate: nameInput => {
-                if (nameInput === Number) {
+                if (nameInput) {
                     return true 
                 } else {
                     console.log("Please enter the manager's ID!")
@@ -59,7 +59,7 @@ const managerPrompt = () => {
             name: 'officeNumber',
             message: "What office does the manager occupy?",
             validate: officeNumber => {
-                if (officeNumber = Number) {
+                if (officeNumber) {
                     return true
                 } else {
                     return false
@@ -77,7 +77,7 @@ const managerPrompt = () => {
 }
 
 // prompt for employee
-const addEmployee = () => {
+const employeePrompt = () => {
     console.log('Add employees to the team project')
     return inquirer.prompt ([
         {
@@ -104,7 +104,7 @@ const addEmployee = () => {
             name: 'id',
             message: "What is the employee's ID number?",
             validate: nameInput => {
-                if (nameInput === Number) {
+                if (nameInput) {
                     return true
                 } else {
                     console.log('Please enter the employee ID!')
@@ -171,7 +171,7 @@ const addEmployee = () => {
         teamArray.push(employee)
 
         if (confirmAndAddEmployee) {
-            return addEmployee(teamArray)
+            return employeePrompt(teamArray)
         } else {
             return teamArray
         }
@@ -190,4 +190,18 @@ const writeFile = data => {
         }
     })
 }
+
+managerPrompt()
+    .then(employeePrompt)
+    .then(teamArray => {
+        return generateFile(teamArray)
+    })
+    .then(pageHtml => {
+        return writeFile(pageHtml)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+
+
 
