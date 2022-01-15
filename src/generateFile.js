@@ -102,7 +102,7 @@ generateFile = (data) => {
 const employeeCards = pageArray.join('')
 
 const createTeam = generatePage(employeeCards)
-return createPage;
+return createTeam;
 }
 
 module.exports = generateFile;
