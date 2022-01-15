@@ -71,7 +71,7 @@ const managerPrompt = () => {
         const {name, id, email, officeNumber} = managerInput
         const manager = new Manager (name, id, email, officeNumber)
 
-        teamArray.push(manager)
+        teamMembers.push(manager)
         console.log(manager)
     })
 }
@@ -168,12 +168,12 @@ const employeePrompt = () => {
             console.log(employee)
         }
 
-        teamArray.push(employee)
+        teamMembers.push(employee)
 
         if (confirmAndAddEmployee) {
-            return employeePrompt(teamArray)
+            return employeePrompt(teamMembers)
         } else {
-            return teamArray
+            return teamMembers
         }
 
     })
@@ -193,8 +193,8 @@ const writeFile = data => {
 
 managerPrompt()
     .then(employeePrompt)
-    .then(teamArray => {
-        return generateFile(teamArray)
+    .then(teamMembers => {
+        return generateFile(teamMembers)
     })
     .then(pageHtml => {
         return writeFile(pageHtml)
