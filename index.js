@@ -180,6 +180,14 @@ const addEmployee = () => {
 }
 
 const writeFile = data => {
-    fs.writeFile('./dist/index.html')
+    fs.writeFile('./dist/index.html', data, err => {
+
+        if(err) {
+            console.log(err)
+            return
+        } else {
+            console.log("The team profile has been successfully created, and the information has been logged to the index.html file")
+        }
+    })
 }
 
