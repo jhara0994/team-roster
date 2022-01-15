@@ -129,7 +129,7 @@ const employeePrompt = () => {
         {
             type: 'input',
             name: 'github',
-            message: "What is the employees github user account?",
+            message: "What is the employees github username?",
             when: (input) => input.role === "Engineer",
             validate: nameInput => {
                 if (nameInput) {
