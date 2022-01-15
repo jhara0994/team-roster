@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+    background-image: url(./style-images/header-back.jpeg);
+    color: white;
+    width: 100%;
+}
+
+.container {
+    border: 3x solid teal;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
