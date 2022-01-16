@@ -11,6 +11,9 @@
 7.  [Questions](#questions)
 ## Description:
 ### This application is designed to assemble your team's profile through a series of prompted questions.
+
+## Walkthrough Video Link:
+### 
 ## Installation:
 ### To install this app, you can clone the github repository. Once the data is cloned, you will need to run npm install to install all dependencies. You will also need access to Node.js to run the application.
 ## Usage:
@@ -21,6 +24,9 @@
 ### Jared Haralson
 ## Test-Instructions:
 ### To test the application before running it, use Jest in your in your integrated terminal and check  the individual files for Employee, Manager, Engineer, and Intern. They all should pass the test in their current form. 
+
+## Example of Generated HTML:
+
 ## Questions:
 Github Username: github.com/jhara0994
 Email: jharalson29@gmail.com
