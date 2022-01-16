@@ -26,6 +26,7 @@
 ### To test the application before running it, use Jest in your in your integrated terminal and check  the individual files for Employee, Manager, Engineer, and Intern. They all should pass the test in their current form. 
 
 ## Example of Generated HTML:
+<img width="1323" alt="Roster_Capture" src="https://user-images.githubusercontent.com/92455472/149647929-466ab4c5-6c80-4cd1-adc9-cb5d399b4c07.png">
 
 ## Questions:
 Github Username: github.com/jhara0994
