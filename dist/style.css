@@ -3,16 +3,38 @@ header {
     background-image: url(./style-images/header-back.jpeg);
     color: white;
     width: 100%;
+    font-size: 32px;
 }
 
-.container {
+.card {
+    margin-top: 150px;
     border: 3x solid teal;
 }
 
 .card-header {
+    background-color: teal;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 100px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.job-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    display: block;
+    position: relative;
     text-align: center;
 }
 
 .card-body {
     text-align: center;
+    background-color: lightgray;
 }

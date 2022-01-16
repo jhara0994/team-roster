@@ -7,6 +7,7 @@ const generatePage = function (employeeCards) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,7 +16,7 @@ const generatePage = function (employeeCards) {
         </header>
         <main>
             <div class="container">
-                <div class="row" id="team-cards">
+                <div class="columns" id="team-cards">
                     <!--Team Cards-->
                     ${employeeCards}
                 </div>
@@ -29,10 +30,10 @@ const generatePage = function (employeeCards) {
 
 const createManager = function (manager) {
     return `
-    <div class="card">
+    <div class="card column">
         <div class="card-header">
             <h3 class="name" id="manager-name">${manager.name} </h3>
-            <h4 class="title" id="manager">Title: Manager </h4>
+            <h4 class="job-title" id="manager">Title: Manager </h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${manager.id}</p>
@@ -45,10 +46,10 @@ const createManager = function (manager) {
 
 const createEngineer = function (engineer) {
     return `
-    <div class="card">
+    <div class="card column">
         <div class="card-header">
             <h3 class="name" id="employee-name">Employee: ${engineer.name}</h3>
-            <h4 class="title">Title: Engineer </h4>
+            <h4 class="job-title">Title: Engineer </h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${engineer.id}</p>
@@ -61,10 +62,10 @@ const createEngineer = function (engineer) {
 
 const createIntern = function (intern) {
     return `
-    <div class="card">
+    <div class="card column">
         <div class="card-header">
             <h3 class="name" id="employee-name">${intern.name} </h3>
-            <h4 class="title">Title: Intern </h4>
+            <h4 class="job-title">Title: Intern </h4>
         </div>
         <div class="card-body">
             <p class="id">ID: ${intern.id} </p>
