@@ -13,7 +13,7 @@
 ### This application is designed to assemble your team's profile through a series of prompted questions.
 
 ## Walkthrough Video Link:
-### 
+### https://drive.google.com/file/d/107UpSeSIWQSnYo9XpVy48V3FLC1ajFRd/view?usp=sharing
 ## Installation:
 ### To install this app, you can clone the github repository. Once the data is cloned, you will need to run npm install to install all dependencies. You will also need access to Node.js to run the application.
 ## Usage:
