@@ -32,8 +32,8 @@ const createManager = function (manager) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="manager-name">${manager.name} </h3>
-            <h4 class="job-title" id="manager">Title: Manager </h4>
+            <h3 class="name" id="manager-name">Manager: ${manager.name} </h3>
+        
         </div>
         <div class="card-body">
             <p class="id">ID: ${manager.id}</p>
@@ -48,8 +48,8 @@ const createEngineer = function (engineer) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="employee-name">Employee: ${engineer.name}</h3>
-            <h4 class="job-title">Title: Engineer </h4>
+            <h3 class="name" id="employee-name">Engineer: ${engineer.name}</h3>
+            
         </div>
         <div class="card-body">
             <p class="id">ID: ${engineer.id}</p>
@@ -64,8 +64,8 @@ const createIntern = function (intern) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="employee-name">${intern.name} </h3>
-            <h4 class="job-title">Title: Intern </h4>
+            <h3 class="name" id="employee-name">Intern: ${intern.name} </h3>
+           
         </div>
         <div class="card-body">
             <p class="id">ID: ${intern.id} </p>
