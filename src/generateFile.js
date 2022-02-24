@@ -32,12 +32,12 @@ const createManager = function (manager) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="manager-name">Manager: ${manager.name} </h3>
+            <h3 class="name" id="manager-name">Manager:<br> ${manager.name} </h3>
         
         </div>
         <div class="card-body">
             <p class="id">ID: ${manager.id}</p>
-            <p class="email">Email: <a href="mailto: ${manager.email}">${manager.email}</a></p>
+            <p class="email">Email:<br> <a href="mailto: ${manager.email}">${manager.email}</a></p>
             <p class="office-num">Office #: ${manager.officeNumber} </p>
         </div>
     </div>
@@ -48,12 +48,12 @@ const createEngineer = function (engineer) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="employee-name">Engineer: ${engineer.name}</h3>
+            <h3 class="name" id="employee-name">Engineer:<br> ${engineer.name}</h3>
             
         </div>
         <div class="card-body">
             <p class="id">ID: ${engineer.id}</p>
-            <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+            <p class="email">Email:<br> <a href="mailto:${engineer.email}">${engineer.email}</a></p>
             <p class="github">Github: <a href="https://github.com/${engineer.github}">https://github.com/${engineer.github}</a></p>
         </div>
     </div>
@@ -64,12 +64,12 @@ const createIntern = function (intern) {
     return `
     <div class="card column">
         <div class="card-header">
-            <h3 class="name" id="employee-name">Intern: ${intern.name} </h3>
+            <h3 class="name" id="employee-name">Intern:<br> ${intern.name} </h3>
            
         </div>
         <div class="card-body">
             <p class="id">ID: ${intern.id} </p>
-            <p class="email">Email: <a href="mailto:${intern.email}">${intern.email}</a></p>
+            <p class="email">Email:<br> <a href="mailto:${intern.email}">${intern.email}</a></p>
             <p class="school">School: ${intern.school}</p>
         </div>
     </div>

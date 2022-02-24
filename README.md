@@ -28,6 +28,6 @@
 ## Example of Generated HTML:
 
 ## Questions:
-Github Username: github.com/jhara0994
-Email: jharalson29@gmail.com
-For questions concerning this project, please reach out on Github or email.
+### Github Username: github.com/jhara0994
+### Email: jharalson29@gmail.com
+### For questions concerning this Team Generator, please reach out on Github or email.
