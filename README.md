@@ -29,12 +29,6 @@
 <img width="1323" alt="Roster_Capture" src="https://user-images.githubusercontent.com/92455472/149647929-466ab4c5-6c80-4cd1-adc9-cb5d399b4c07.png">
 
 ## Questions:
-<<<<<<< HEAD
 ### Github Username: github.com/jhara0994
 ### Email: jharalson29@gmail.com
 ### For questions concerning this Team Generator, please reach out on Github or email.
-=======
-Github Username: github.com/jhara0994
-Email: jharalson29@gmail.com
-For questions concerning this project, please reach out on Github or email.
->>>>>>> refs/remotes/origin/main
